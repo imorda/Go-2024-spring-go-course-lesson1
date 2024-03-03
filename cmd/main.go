@@ -1,9 +1,12 @@
 package main
 
-// import "github.com/central-university-dev/2024-spring-go-course-lesson1/fizzbuzz"
+import (
+	"fmt"
+	"github.com/central-university-dev/2024-spring-go-course-lesson1/fizzbuzz"
+)
 
 func main() {
-	// TODO: implement me!!!
-	// Tут в цикле нужно имплементировать вывод в stdout вызов функции
-	//fizzbuzz.FizzBuzz(i)
+	for i := 1; i <= 100; i++ {
+		fmt.Printf("i=%v, FizzBuzz(i)=%v\n", i, fizzbuzz.FizzBuzz(i))
+	}
 }
